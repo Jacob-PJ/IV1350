@@ -12,48 +12,56 @@ import src.se.kth.iv1350.sem3.integration.AccountDatabaseSystem;
 import src.se.kth.iv1350.sem3.integration.DiscountDatabaseSystem;
 import src.se.kth.iv1350.sem3.integration.InventoryDatabaseSystem;
 
+/**
+ * Unit tests for the {@link Controller} class.
+ * Verifies correct behavior for starting sales, adding items,
+ * handling invalid input, and processing payments.
+ */
 public class TestController {
 
     private Controller controller;
-
     private InventoryDatabaseSystem inv;
     private DiscountDatabaseSystem discDB;
     private AccountDatabaseSystem acc;
 
+    /**
+     * Initializes the database systems and controller before each test.
+     */
     @BeforeEach
     public void setUp() {
-
-        // Initialize the database systems
         inv = new InventoryDatabaseSystem();
         discDB = new DiscountDatabaseSystem();
         acc = new AccountDatabaseSystem();
-
-        // Initialize the controller
         controller = new Controller(inv, discDB, acc);
         controller.startSale();
     }
 
+    /**
+     * Cleans up test resources after each test.
+     */
     @AfterEach
     void tearDown() {
-        // Set evreything to null
         controller = null;
         inv = null;
         discDB = null;
         acc = null;
     }
 
-    // End the current sale and start a new one to ensure evrything is reset and
-    // check that a sale is active
+    /**
+     * Tests that starting a sale activates a new sale.
+     * Ends a previous sale and verifies that a new sale is started successfully.
+     */
     @Test
     public void testStartSale() {
-
         controller.endSale();
         controller.startSale();
         assertTrue(controller.isSaleActive(), "Sale should be active after starting a new sale");
     }
 
-    // Thurow test that cehcks that item is properly added to the sale
-    // and that the quantity is correct
+    /**
+     * Tests that adding multiple items correctly updates the sale with appropriate
+     * quantities and item IDs.
+     */
     @Test
     public void testAddItem() {
         int itemID1 = 1;
@@ -64,6 +72,7 @@ public class TestController {
 
         controller.addItem(itemID1, quantity1);
         controller.addItem(itemID2, quantity2);
+
         assertEquals(quantity1, controller.getItemsInCurrentSale().get(0).getQuantity(),
                 "Item quantity should match the added quantity");
         assertEquals(quantity2, controller.getItemsInCurrentSale().get(1).getQuantity(),
@@ -78,24 +87,26 @@ public class TestController {
                 "Sale should contain two items after adding them");
     }
 
-    // Makes sure that the item is not added to the sale if the item ID is invalid
+    /**
+     * Verifies that no item is added if the item ID is invalid.
+     */
     @Test
     public void testAddItemWithInvalidID() {
-        int invalidItemID = 9999; // Assuming this ID doesn't exist
+        int invalidItemID = 9999;
         int quantity = 1;
 
-        controller.startSale(); // required to initialize a sale
+        controller.startSale();
         controller.addItem(invalidItemID, quantity);
 
-        // Verify that no items were added
-        assertTrue(controller.getItemsInCurrentSale().isEmpty(), "No items should be added for an invalid item ID");
+        assertTrue(controller.getItemsInCurrentSale().isEmpty(),
+                "No items should be added for an invalid item ID");
     }
 
-    // Makes sure that payment is processed correctly and change is calculated
-    // correctly
+    /**
+     * Verifies that payment is processed and correct change is calculated.
+     */
     @Test
     public void testMakePayment() {
-
         int itemID = 1; // Apple
         int quantity = 2;
         controller.addItem(itemID, quantity);
@@ -111,14 +122,14 @@ public class TestController {
         assertEquals(expectedTotal, controller.getTotalPrice(), "Total price should be 20");
     }
 
-    // Testing that there is no active sale after ending the sale
+    /**
+     * Tests that ending a sale properly deactivates it.
+     */
     @Test
     public void testEndSale() {
-        controller.startSale(); // required to start the sale
-
-        controller.endSale(); // we're testing this method
+        controller.startSale();
+        controller.endSale();
 
         assertFalse(controller.isSaleActive(), "Sale should be inactive after ending it");
     }
-
 }

@@ -8,33 +8,47 @@ import src.se.kth.iv1350.sem3.integration.InventoryDatabaseSystem;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Unit tests for the {@link InventoryDatabaseSystem} class.
+ * Ensures that items can be correctly fetched and handles invalid IDs properly.
+ */
 public class TestInventoryDatabaseSystem {
 
     private InventoryDatabaseSystem inventoryDatabaseSystem;
 
+    /**
+     * Sets up the test fixture before each test.
+     * Initializes an instance of {@link InventoryDatabaseSystem}.
+     */
     @BeforeEach
     public void setUp() {
-        // Initialize the InventoryDatabaseSystem
         inventoryDatabaseSystem = new InventoryDatabaseSystem();
     }
 
+    /**
+     * Cleans up resources after each test.
+     */
     @AfterEach
     public void tearDown() {
-        // Set inventoryDatabaseSystem to null
         inventoryDatabaseSystem = null;
     }
 
-    // Making sure that items in the database can be fetched
+    /**
+     * Verifies that a known item can be fetched successfully by ID.
+     * Item with ID 1 (Apple) is predefined in the test setup.
+     */
     @Test
     public void testFetchItemFound() {
-        int existingID = 1; // Predefined as apple
+        int existingID = 1;
         ItemDTO result = inventoryDatabaseSystem.fetchItem(existingID);
 
         assertNotNull(result, "Expected to find item with ID 1");
         assertEquals(existingID, result.getID(), "Fetched item ID should match requested ID");
     }
 
-    // Making sure that a non-existing item returns null
+    /**
+     * Verifies that fetching an item with a non-existent ID returns null.
+     */
     @Test
     public void testFetchItemNotFound() {
         int nonExistingID = 9999;

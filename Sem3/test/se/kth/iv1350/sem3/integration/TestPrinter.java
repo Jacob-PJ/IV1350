@@ -7,22 +7,32 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import src.se.kth.iv1350.sem3.integration.Printer;
 
+/**
+ * Unit tests for the Printer class.
+ * Verifies the behavior of the printReceipt method.
+ */
 public class TestPrinter {
     private Printer printer;
 
+    /**
+     * Initializes the Printer before each test.
+     */
     @BeforeEach
     public void setUp() {
-        // Initialize the printer
         printer = new Printer();
     }
 
+    /**
+     * Sets the Printer to null after each test.
+     */
     @AfterEach
     public void tearDown() {
-        // Set printer to null
         printer = null;
     }
 
-    // Making sure that the printer prints out the correct receipt
+    /**
+     * Tests that the receipt is correctly printed to the console.
+     */
     @Test
     public void testPrintReceipt() {
         String receipt = "Receipt: \nItem 1: $10.00\nItem 2: $20.00\nTotal: $30.00";

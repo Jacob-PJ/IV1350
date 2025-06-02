@@ -34,7 +34,7 @@ public class LastMessage {
     /**
      * Retrieves the current message.
      *
-     * @return Message that is currently held.
+     * @return Message that is currently held as a <code>String</code>.
      */
     public String getMessage() {
         return message;

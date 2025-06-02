@@ -2,6 +2,11 @@ package src.se.kth.iv1350.sem3.DTOs;
 
 import java.math.BigDecimal;
 
+/**
+ * Represents an item in the system.
+ * Contains basic information about the item such as name, ID, description,
+ * price, and VAT.
+ */
 public class ItemDTO {
     private final String name;
     private final int ID;
@@ -9,8 +14,15 @@ public class ItemDTO {
     private final BigDecimal VAT;
     private final String description;
 
-    // Constructor which defines the item with its name, ID, description, price and
-    // VAT
+    /**
+     * Creates a new instance of <code>ItemDTO</code>.
+     *
+     * @param name        The name of the item.
+     * @param ID          The identifier of the item.
+     * @param description A short description of the item.
+     * @param price       The price of the item.
+     * @param VAT         The VAT rate for the item.
+     */
     public ItemDTO(String name, int ID, String description, BigDecimal price, BigDecimal VAT) {
         this.ID = ID;
         this.name = name;
@@ -19,27 +31,47 @@ public class ItemDTO {
         this.VAT = VAT;
     }
 
-    // Returns the name of the item
+    /**
+     * Gets the name of the item.
+     *
+     * @return The item's name.
+     */
     public String getName() {
         return this.name;
     }
 
-    // Returns the price of the item
+    /**
+     * Gets the price of the item.
+     *
+     * @return The item's price.
+     */
     public BigDecimal getPrice() {
         return this.price;
     }
 
-    // Returns the ID of the item
+    /**
+     * Gets the identifier of the item.
+     *
+     * @return The item ID.
+     */
     public int getID() {
         return this.ID;
     }
 
-    // Returns the VAT of the item
+    /**
+     * Gets the VAT rate for the item.
+     *
+     * @return The item's VAT.
+     */
     public BigDecimal getVAT() {
         return this.VAT;
     }
 
-    // Returns the description of the item
+    /**
+     * Gets the description of the item.
+     *
+     * @return The item's description.
+     */
     public String getDescription() {
         return this.description;
     }

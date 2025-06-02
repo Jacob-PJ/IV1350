@@ -6,6 +6,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Class representing a sale.
+ * Holds information about items, pricing, VAT, payment, and change.
+ */
 public class Sale {
 
     private LocalDateTime timeOfSale;
@@ -15,8 +19,9 @@ public class Sale {
     private BigDecimal payment;
     private BigDecimal change;
 
-    // Constructor which creates a new sale with the current time and initializes
-    // the list of items
+    /**
+     * Creates a sale instance and initializes all fields.
+     */
     public Sale() {
         this.timeOfSale = LocalDateTime.now();
         this.items = new ArrayList<>();
@@ -26,52 +31,80 @@ public class Sale {
         this.change = BigDecimal.ZERO;
     }
 
-    // Sets the time of sale to the current time
+    /**
+     * @return Timestamp when the sale was initiated as a
+     *         <code>LocalDateTime</code>.
+     */
     public LocalDateTime getTimeOfSale() {
         return this.timeOfSale;
     }
 
-    // Returns the time of sale as a string
+    /**
+     * @return String representation of the sale timestamp as a <code>String</code>.
+     */
     public String getTimeOfSaleAsString() {
         return getTimeOfSale().toString();
     }
 
-    // Returns the list of items in the sale
+    /**
+     * @return Unmodifiable list of items in the sale as a <code>List</code>.
+     */
     public List<ItemInCart> getItems() {
         return Collections.unmodifiableList(this.items);
     }
 
-    // Returns the total price of the sale
+    /**
+     * @return Total price of the sale as a <code>BigDecimal</code>.
+     */
     public BigDecimal getTotalPriceOfSale() {
         return this.totalPrice;
     }
 
-    // Returns the total VAT of the sale
+    /**
+     * @return Total VAT calculated for the sale as a <code>BigDecimal</code>.
+     */
     public BigDecimal getTotalVATofSale() {
         return this.totalVAT;
     }
 
-    // Returns the payment made by the customer
+    /**
+     * @return Amount of money paid by the customer as a <code>BigDecimal</code>.
+     */
     public BigDecimal getPayment() {
         return this.payment;
     }
 
-    // Returns teh cahnge
+    /**
+     * @return Amount of change to pay out as a <code>BigDecimal</code>.
+     */
     public BigDecimal getChange() {
         return this.change;
     }
 
-    // Add to the total price
+    /**
+     * Adds a value to the current total price.
+     *
+     * @param addedPrice <code>BigDecimal</code> amount to add.
+     */
     private void addToTotalPrice(BigDecimal addedPrice) {
         this.totalPrice = this.totalPrice.add(addedPrice);
     }
 
-    // Add to the total VAT
+    /**
+     * Adds a value to the current total VAT.
+     *
+     * @param addedVAT <code>BigDecimal</code> VAT to be added.
+     */
     private void addToTotalVAT(BigDecimal addedVAT) {
         this.totalVAT = this.totalVAT.add(addedVAT);
     }
 
-    // finds the index of an item int the list of purchased items
+    /**
+     * Finds the index of a matching item in the list.
+     *
+     * @param item <code>ItemInCart</code> to search for.
+     * @return Index if found, otherwise -1 as an <code>int</code>.
+     */
     private int findIndexOfItem(ItemInCart item) {
         for (int i = 0; i < this.items.size(); i++) {
             if (this.items.get(i).getID() == item.getID()) {
@@ -81,11 +114,17 @@ public class Sale {
         return -1;
     }
 
-    // Takes an ItemCartDTO (Item + Price) object and adds it to the list of items,
-    // as well as updating the price and VAT. If the item is
-    // already in the list, it updates the quantity of the item and adds the price
-    public void addItem(ItemInCart itemAdded) {
+    public ItemInCart getItemByIndex(int index) {
+        return this.items.get(index);
+    }
 
+    /**
+     * Adds an item to the sale or updates the quantity if the item already exists.
+     * Also updates total price and VAT.
+     *
+     * @param itemAdded <code>ItemInCart</code> object to be added.
+     */
+    public void addItem(ItemInCart itemAdded) {
         int index = findIndexOfItem(itemAdded);
 
         if (index == -1) {
@@ -98,10 +137,13 @@ public class Sale {
         addToTotalVAT(itemAdded.getVAT());
     }
 
-    // Takes a payment and updates the payment variable and calculates the change
+    /**
+     * Registers the customer's payment and calculates change.
+     *
+     * @param payment Amount paid as a <code>BigDecimal</code>.
+     */
     public void makePayment(BigDecimal payment) {
         this.payment = payment;
         this.change = payment.subtract(totalPrice);
     }
-
 }
