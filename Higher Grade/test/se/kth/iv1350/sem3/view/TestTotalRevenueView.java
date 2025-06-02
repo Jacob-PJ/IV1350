@@ -17,18 +17,30 @@ public class TestTotalRevenueView {
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
 
+    /**
+     * Sets up a new TotalRevenueView instance and tests its functionality.
+     * Redirects System.out to capture output for verification.
+     */
     @BeforeEach
     public void setUp() {
         totalRevenueView = new TotalRevenueView();
         System.setOut(new PrintStream(outContent));
     }
 
+    /**
+     * Cleans up after each test by resetting the TotalRevenueView
+     * and restoring System.out to its original state.
+     */
     @AfterEach
     public void tearDown() {
         totalRevenueView = null;
         System.setOut(originalOut);
     }
 
+    /**
+     * Verifies that the updateRevenue method prints the correct output
+     * when called with a specific revenue value.
+     */
     @Test
     public void testUpdateRevenuePrintsCorrectOutput() {
         BigDecimal revenue = new BigDecimal("100.00");
