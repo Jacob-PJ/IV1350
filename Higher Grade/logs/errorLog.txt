@@ -1,0 +1,933 @@
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Item with ID 1 not found in the inventory.
+Item with ID 2 not found in the inventory.
+Item with ID 3 not found in the inventory.
+Item with ID 3 not found in the inventory.
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Item with ID 1 not found in the inventory.
+Item with ID 2 not found in the inventory.
+Item with ID 3 not found in the inventory.
+Item with ID 3 not found in the inventory.
+Inventory database failure
+Item with ID 1 not found in the inventory.
+Item with ID 2 not found in the inventory.
+Item with ID 3 not found in the inventory.
+Item with ID 3 not found in the inventory.
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Item with ID 1 not found in the inventory.
+Item with ID 2 not found in the inventory.
+Item with ID 3 not found in the inventory.
+Item with ID 3 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Item with ID 1 not found in the inventory.
+Item with ID 2 not found in the inventory.
+Item with ID 3 not found in the inventory.
+Item with ID 3 not found in the inventory.
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Item with ID 1 not found in the inventory.
+Item with ID 2 not found in the inventory.
+Item with ID 3 not found in the inventory.
+Item with ID 3 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Item with ID 9999 not found in the inventory.
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Item with ID 5 not found in the inventory.
+Inventory database failure
+Item with ID 5 not found in the inventory.
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure: 
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure: 
+ERROR: Item ID 5 not found
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-01
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-01
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-01
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-01
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-01
+22:51:07.977
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-01
+22:51:07.982
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+00:47:38.080
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+00:47:38.085
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+20:32:40.560
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+20:32:40.564
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+20:39:48.134
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+20:39:48.139
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+21:46:46.587
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+21:46:46.591
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+21:47:07.880
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+21:47:07.885
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+21:51:03.454
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+21:51:03.459
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+21:51:14.460
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+21:51:14.464
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+21:51:29.021
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+21:51:29.025
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+21:51:37.765
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+21:51:37.770
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+21:51:51.616
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+21:51:51.621
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+21:56:11.177
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+21:56:11.181
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+21:56:17.750
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+21:56:17.754
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:01:05.588
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:01:05.592
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:01:19.806
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:01:19.809
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:02:45.667
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:02:45.671
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:03:00.478
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:03:00.482
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:03:58.877
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:03:58.883
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:04:42.533
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:04:42.537
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:04:44.744
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:04:44.747
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:04:46.712
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:04:46.717
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:04:48.767
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:04:48.772
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:12:06.533
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:12:06.537
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:12:57.614
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:12:57.617
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:13:11.293
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:13:11.297
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:13:29.028
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:13:29.032
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:13:38.708
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:13:38.712
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:14:04.496
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:14:04.501
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:14:10.964
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:14:10.968
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:18:11.858
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:18:11.863
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:19:18.993
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:19:18.999
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:20:26.225
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:20:26.229
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:20:49.295
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:20:49.298
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:21:02.520
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:21:02.525
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:26:52.732
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:26:52.736
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:42:29.388
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:42:29.392
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:48:48.270
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+22:48:48.274
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+23:00:04.863
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+23:00:04.867
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+23:00:08.583
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+23:00:08.586
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+23:10:23.703
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+23:10:23.708
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+23:19:06.019
+ERROR: Item ID 5 not found
+
+ERROR: Inventory database failure: 
+ItemNotFoundException
+2025-06-02
+23:19:06.023
+ERROR: Item ID 5 not found
+
