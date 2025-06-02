@@ -3,18 +3,32 @@ package src.se.kth.iv1350.sem3.model;
 import java.math.BigDecimal;
 import java.util.Locale;
 
+/**
+ * Class representing a receipt for a sale.
+ * The receipt contains the time of sale, list of items, and payment
+ * information.
+ */
 public class Receipt {
 
     private String receipt;
-    Sale sale;
+    private final Sale sale;
 
-    // Constructor for Receipt class, which works as a template for the receipt
+    /**
+     * Creates a receipt for a sale.
+     *
+     * @param sale Sale to create a receipt for. Must be a valid <code>Sale</code>
+     *             object.
+     */
     public Receipt(Sale sale) {
         this.receipt = "";
         this.sale = sale;
     }
 
-    public void generateReciept() {
+    /**
+     * Generates the receipt content based on the sale.
+     * Appends formatted details such as time, items, totals, and change.
+     */
+    public void generateReceipt() {
         receipt += "- - - - - - - - - - - - - - - - - - Begin receipt - - - - - - - - - - - - - - - - - - -\n";
         receipt += "Time of Sale : " + sale.getTimeOfSaleAsString() + "\n";
 
@@ -30,12 +44,17 @@ public class Receipt {
 
         receipt += "Total price : " + String.format(Locale.US, "%.2f", sale.getTotalPriceOfSale()) + " SEK\n";
         receipt += "VAT : " + String.format(Locale.US, "%.2f", sale.getTotalVATofSale()) + " SEK\n";
-        receipt += "Chash : " + String.format(Locale.US, "%.2f", sale.getPayment()) + " SEK\n";
+        receipt += "Cash : " + String.format(Locale.US, "%.2f", sale.getPayment()) + " SEK\n";
         receipt += "Change : " + String.format(Locale.US, "%.2f", sale.getChange()) + " SEK\n";
+        receipt += "Total Discount : " + String.format(Locale.US, "%.2f", sale.getTotalDiscount()) + " SEK\n";
         receipt += "- - - - - - - - - - - - - - - - - - End receipt - - - - - - - - - - - - - - - - - - - - -\n";
     }
 
-    // Returns the receipt
+    /**
+     * Returns the generated receipt.
+     *
+     * @return The formatted receipt as a <code>String</code>.
+     */
     public String getReceipt() {
         return receipt;
     }

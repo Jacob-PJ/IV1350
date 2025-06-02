@@ -1,10 +1,21 @@
 package src.se.kth.iv1350.sem3.model;
 
 import java.util.Locale;
+import java.math.BigDecimal;
 
+/**
+ * Provides templates for messages that are used in various parts of the sale
+ * process.
+ * These messages help communicate feedback to the user.
+ */
 public class Messages {
 
-    // A template for the message when an item is added to the cart
+    /**
+     * Creates a message detailing the added item.
+     *
+     * @param itemAdded Item that was added to the cart.
+     * @return Formatted string with item details as a <code>String</code>.
+     */
     public String createAddedItemMessage(ItemInCart itemAdded) {
         String addedItemMessage = "Added " + itemAdded.getQuantity() + " items with ID " + itemAdded.getID() + ":\n";
         addedItemMessage += "Item ID: " + itemAdded.getID() + "\n";
@@ -16,7 +27,13 @@ public class Messages {
         return addedItemMessage;
     }
 
-    // A template for displaying the running cost of the sale
+    /**
+     * Creates a message showing the current total cost and VAT of the sale.
+     *
+     * @param sale Current sale.
+     * @return Formatted string showing the running total and VAT as a
+     *         <code>String</code>.
+     */
     public String createRunningCostMessage(Sale sale) {
         String runningCostMessage = "Total cost (incl. VAT): " +
                 String.format(Locale.US, "%.2f", sale.getTotalPriceOfSale()) + " SEK\n";
@@ -26,15 +43,37 @@ public class Messages {
         return runningCostMessage;
     }
 
+    /**
+     * Creates a message showing the current total discount.
+     *
+     * @param amount the amount of discount.
+     * @return Formatted string showing the current discount as a
+     *         <code>String</code>.
+     */
+    public String createShowCurrentDiscountMessage(BigDecimal amount) {
+        String currentDiscount = "The discount amount received is: " + amount + " SEK\n";
+        return currentDiscount;
+    }
+
+    /**
+     * Creates a message showing the current total discount.
+     *
+     * @param amount the amount of discount.
+     * @return Formatted string showing the running total discount as a
+     *         <code>String</code>.
+     */
+    public String createShowTotalDiscountMessage(BigDecimal amount) {
+        String totalDiscount = "Your total discount is " + amount + " SEK\n";
+        return totalDiscount;
+    }
+
+    /**
+     * Creates a message to indicate that a new sale has started.
+     *
+     * @return Formatted string signaling the beginning of a sale as a
+     *         <code>String</code>.
+     */
     public String createStartSaleMessage() {
         return "------------------Starting Sale-------------------\n";
-    }
-
-    public String createItemNotFoundMessage(int itemID) {
-        return "Item ID " + itemID + " not found.\n";
-    }
-
-    public String createDatabaseFailureMessage(String dbs) {
-        return dbs + " database could not be accesed";
     }
 }

@@ -6,6 +6,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Class representing a sale.
+ * Holds information about items, pricing, VAT, payment, and discounts.
+ */
 public class Sale {
 
     private LocalDateTime timeOfSale;
@@ -14,11 +18,15 @@ public class Sale {
     private BigDecimal totalVAT;
     private BigDecimal payment;
     private BigDecimal change;
+    private DiscountStrategy discountStrategy;
+    private BigDecimal totalDiscount;
+    private String customerID = "George";
 
     private final List<RevenueObserver> revenueObservers;
 
-    // Constructor which creates a new sale with the current time and initializes
-    // the list of items
+    /**
+     * Creates a sale instance and initializes all fields.
+     */
     public Sale() {
         this.timeOfSale = LocalDateTime.now();
         this.items = new ArrayList<>();
@@ -26,60 +34,123 @@ public class Sale {
         this.totalVAT = BigDecimal.ZERO;
         this.payment = BigDecimal.ZERO;
         this.change = BigDecimal.ZERO;
-
+        this.totalDiscount = BigDecimal.ZERO;
         this.revenueObservers = new ArrayList<>();
     }
 
-    // Sets the time of sale to the current time
+    /**
+     * @return Timestamp when the sale was initiated as a
+     *         <code>LocalDateTime</code>.
+     */
     public LocalDateTime getTimeOfSale() {
         return this.timeOfSale;
     }
 
-    // Returns the time of sale as a string
+    /**
+     * @return String representation of the sale timestamp.
+     */
     public String getTimeOfSaleAsString() {
         return getTimeOfSale().toString();
     }
 
-    // Returns the list of items in the sale
+    /**
+     * @return Unmodifiable list of items in the sale as a <code>List</code>.
+     */
     public List<ItemInCart> getItems() {
         return Collections.unmodifiableList(this.items);
     }
 
-    // Returns the total price of the sale
+    /**
+     * @return Total price of the sale, including any applied discounts, as a
+     *         <code>BigDecimal</code>.
+     */
     public BigDecimal getTotalPriceOfSale() {
         return this.totalPrice;
     }
 
-    // Returns the total VAT of the sale
+    /**
+     * @return Total price of the sale, including any applied discounts, as a
+     *         <code>BigDecimal</code>.
+     */
+    public BigDecimal getTotalDiscount() {
+        return this.totalDiscount;
+    }
+
+    /**
+     * @return Total VAT calculated for the sale as a <code>BigDecimal</code>.
+     */
     public BigDecimal getTotalVATofSale() {
         return this.totalVAT;
     }
 
-    // Returns the payment made by the customer
+    /**
+     * @return Amount of money paid by the customer as a <code>BigDecimal</code>.
+     */
     public BigDecimal getPayment() {
         return this.payment;
     }
 
-    // Returns teh cahnge
+    /**
+     * @return Amount of change to pay out as a <code>BigDecimal</code>.
+     */
     public BigDecimal getChange() {
         return this.change;
     }
 
-    // Add to the total price
-    private void addToTotalPrice(BigDecimal addedPrice) {
+    /**
+     * Adds a value to the current total price.
+     *
+     * @param addedPrice Price to be added as a <code>BigDecimal</code>.
+     */
+    private void updateTotalPrice(BigDecimal addedPrice) {
         this.totalPrice = this.totalPrice.add(addedPrice);
     }
 
-    public void addDiscount(double discountAmount) {
-
+    /**
+     * Sets the strategy used to apply discounts.
+     *
+     * @param strategy Discount strategy to use as a {@link DiscountStrategy}.
+     */
+    public void setDiscountStrategy(DiscountStrategy strategy) {
+        this.discountStrategy = strategy;
     }
 
-    // Add to the total VAT
+    /**
+     * Applies the selected discount strategy and reduces the total price.
+     * 
+     * @return Current discount amount as a <code>BigDecimal</code>.
+     */
+    public BigDecimal addDiscount() {
+        BigDecimal discountAmount = discountStrategy.getDiscount(totalPrice, items, customerID);
+        updateTotalPrice(discountAmount.negate());
+        this.totalDiscount = this.totalDiscount.add(discountAmount);
+        return discountAmount;
+    }
+
+    /**
+     * Shows current total discount.
+     * 
+     * @return Total discount as a <code>BigDecimal</code>.
+     */
+    public BigDecimal showCurrentTotalDiscount() {
+        return this.totalDiscount;
+    }
+
+    /**
+     * Adds a value to the current total VAT.
+     *
+     * @param addedVAT VAT to be added as a <code>BigDecimal</code>.
+     */
     private void addToTotalVAT(BigDecimal addedVAT) {
         this.totalVAT = this.totalVAT.add(addedVAT);
     }
 
-    // finds the index of an item int the list of purchased items
+    /**
+     * Finds the index of a matching item in the list.
+     *
+     * @param item Item to search for as a {@link ItemInCart}.
+     * @return Index if found, otherwise <code>-1</code>.
+     */
     private int findIndexOfItem(ItemInCart item) {
         for (int i = 0; i < this.items.size(); i++) {
             if (this.items.get(i).getID() == item.getID()) {
@@ -89,11 +160,12 @@ public class Sale {
         return -1;
     }
 
-    // Takes an ItemCartDTO (Item + Price) object and adds it to the list of items,
-    // as well as updating the price and VAT. If the item is
-    // already in the list, it updates the quantity of the item and adds the price
+    /**
+     * Adds an item to the sale or updates the quantity if the item already exists.
+     *
+     * @param itemAdded Item to be added as a {@link ItemInCart}.
+     */
     public void addItem(ItemInCart itemAdded) {
-
         int index = findIndexOfItem(itemAdded);
 
         if (index == -1) {
@@ -102,25 +174,37 @@ public class Sale {
             this.items.get(index).increaseQuantity(itemAdded.getQuantity());
         }
 
-        addToTotalPrice(itemAdded.getPrice());
+        updateTotalPrice(itemAdded.getPrice());
         addToTotalVAT(itemAdded.getVAT());
     }
 
-    // Takes a payment and updates the payment variable and calculates the change
+    /**
+     * Registers the customer's payment and calculates change.
+     * Notifies all revenue observers after a completed payment.
+     *
+     * @param payment Amount paid by the customer as a <code>BigDecimal</code>.
+     */
     public void makePayment(BigDecimal payment) {
         this.payment = payment;
         this.change = payment.subtract(totalPrice);
         notifyRevenueObservers();
     }
 
+    /**
+     * Adds an observer that will be notified of revenue updates.
+     *
+     * @param observer Observer to add as a {@link RevenueObserver}.
+     */
     public void addRevenueObserver(RevenueObserver observer) {
         revenueObservers.add(observer);
     }
 
+    /**
+     * Notifies all registered observers of the revenue to add after the sale.
+     */
     private void notifyRevenueObservers() {
         for (RevenueObserver observer : revenueObservers) {
             observer.updateRevenue(totalPrice);
         }
     }
-
 }

@@ -1,28 +1,43 @@
 package src.se.kth.iv1350.sem3.integration;
 
 /**
- * This class represents an exception that occurs when there is a failure in the
- * database.
+ * Thrown when the inventory or database system cannot be accessed.
+ * Indicates a failure to communicate with an external data source.
  */
-public class DatabaseFailureException extends Exception {
+public class DatabaseFailureException extends RuntimeException {
 
     /**
-     * Defaut constructor for DatabaseFailureExceptionwithout
+     * Creates a new instance of <code>DatabaseFailureException</code>
+     * with a default error message.
      */
-
-    // Constructor for DatabaseFailureException, acts as a default message if no
-    // arguments are given
     public DatabaseFailureException() {
         super("Database failure");
     }
 
     /**
-     * Constructor for DatabaseFailureException, takes a message as an argument.
-     * 
-     * @param message A message explaining the reason for the failure.
+     * Creates a new instance of <code>DatabaseFailureException</code>
+     * with a given error message.
+     *
+     * @param database The name of the database that failed.
      */
+    public DatabaseFailureException(String database) {
+        super("ERROR: " + database + " database failure");
+    }
 
-    public DatabaseFailureException(String message) {
-        super(message);
+    /**
+     * Provides a detailed message about the database failure.
+     * Includes the current date, time, and the original error message.
+     *
+     * @return <code>String</code> containing a detailed message about the database
+     *         failure.
+     */
+    public String getDevMessage() {
+        String message = "";
+        message += "DatabaseFailiureExceptio\n";
+        message += java.time.LocalDate.now() + "\n";
+        message += java.time.LocalTime.now() + "\n";
+        message += this.getMessage() + "\n";
+
+        return message;
     }
 }

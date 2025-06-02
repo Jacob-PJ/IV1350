@@ -6,9 +6,19 @@ import src.se.kth.iv1350.sem3.integration.DiscountDatabaseSystem;
 import src.se.kth.iv1350.sem3.integration.InventoryDatabaseSystem;
 import src.se.kth.iv1350.sem3.view.View;
 
+/**
+ * Starts the application.
+ * Initializes the core components and runs a sample sale.
+ */
 public class StartUp {
 
-    // Main method to start the program
+    /**
+     * The main method serves as the entry point of the program.
+     * It sets up the system by creating instances of the database systems,
+     * controller, and view, then runs a sample sale simulation.
+     *
+     * @param args Command line arguments (not used).
+     */
     public static void main(String[] args) {
         InventoryDatabaseSystem inv = new InventoryDatabaseSystem();
         DiscountDatabaseSystem discDB = new DiscountDatabaseSystem();
