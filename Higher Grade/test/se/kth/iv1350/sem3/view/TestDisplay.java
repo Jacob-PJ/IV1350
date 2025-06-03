@@ -5,43 +5,43 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
 import src.se.kth.iv1350.sem3.view.Display;
 
 public class TestDisplay {
 
     private Display display;
+    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+    private final PrintStream originalOut = System.out;
 
     /**
-     * Initializes the Display before each test.
+     * Sets up a new Display instance and redirects System.out before each test.
      */
     @BeforeEach
     public void setUp() {
         display = Display.getInstance();
+        System.setOut(new PrintStream(outContent));
     }
 
     /**
-     * Sets the Display to null after each test.
+     * Cleans up after each test by resetting the Display and System.out.
      */
     @AfterEach
     public void tearDown() {
         display = null;
+        System.setOut(originalOut);
     }
 
     /**
-     * Tests that the showMessage method displays the correct message.
+     * Verifies that the showMessage method prints the correct message to the
+     * console.
      */
     @Test
     public void testShowMessage() {
         String message = "abcd efgh";
-
-        java.io.ByteArrayOutputStream outContent = new java.io.ByteArrayOutputStream();
-        System.setOut(new java.io.PrintStream(outContent));
-
         display.showMessage(message);
-
         assertEquals(message + System.lineSeparator(), outContent.toString());
-
-        // Reset System.out
-        System.setOut(System.out);
     }
 }
