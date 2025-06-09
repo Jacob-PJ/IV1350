@@ -142,14 +142,15 @@ public class Controller {
         return lastMessage.getMessage();
     }
 
-    /**
-     * Gets the list of items currently added to the sale.
-     * This method could be sligthly problematic if called by the view, and is only
-     * used for unit testing. The lsit that is returned is also not changable.
-     *
-     * @return List of {@link ItemInCart} representing items in the current sale.
-     */
-    public List<ItemInCart> getItemsInCurrentSale() {
-        return sale.getItems();
+    public int getSaleTotalItemCount() {
+        return sale.getTotalItemCount();
+    }
+
+    public int getSaleQuantityOfItemAtIndex(int index) {
+        return sale.getQuantityOfItemAtIndex(index);
+    }
+
+    public int getSaleIdOfItemAtIndex(int index) {
+        return sale.getIdOfItemAtIndex(index);
     }
 }
