@@ -50,13 +50,13 @@ public class TestSale {
         ItemInCart item2 = new ItemInCart(itemDTO2, 3);
         sale.addItem(item2);
 
-        assertEquals(2, sale.getItems().size(), "Sale should contain two different items");
+        assertEquals(2, sale.getTotalItemCount(), "Sale should contain two different items");
 
-        assertEquals(2, sale.getItems().get(0).getQuantity(), "First item's quantity should match");
-        assertEquals(3, sale.getItems().get(1).getQuantity(), "Second item's quantity should match");
+        assertEquals(2, sale.getQuantityOfItemAtIndex(0), "First item's quantity should match");
+        assertEquals(3, sale.getQuantityOfItemAtIndex(1), "Second item's quantity should match");
 
-        assertEquals(1, sale.getItems().get(0).getID(), "First item's ID should match");
-        assertEquals(2, sale.getItems().get(1).getID(), "Second item's ID should match");
+        assertEquals(1, sale.getIdOfItemAtIndex(0), "First item's ID should match");
+        assertEquals(2, sale.getIdOfItemAtIndex(1), "Second item's ID should match");
     }
 
     /**
@@ -74,8 +74,8 @@ public class TestSale {
         sale.addItem(itemFirst);
         sale.addItem(itemSecond);
 
-        assertEquals(1, sale.getItems().size(), "Should only have one entry for the item in the sale");
-        assertEquals(5, sale.getItems().get(0).getQuantity(), "Quantity should be merged to 5");
+        assertEquals(1, sale.getTotalItemCount(), "Should only have one entry for the item in the sale");
+        assertEquals(5, sale.getQuantityOfItemAtIndex(0), "Quantity should be merged to 5");
     }
 
     /**

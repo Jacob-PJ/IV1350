@@ -73,17 +73,17 @@ public class TestController {
         controller.addItem(itemID1, quantity1);
         controller.addItem(itemID2, quantity2);
 
-        assertEquals(quantity1, controller.getItemsInCurrentSale().get(0).getQuantity(),
+        assertEquals(quantity1, controller.getSaleQuantityOfItemAtIndex(0),
                 "Item quantity should match the added quantity");
-        assertEquals(quantity2, controller.getItemsInCurrentSale().get(1).getQuantity(),
+        assertEquals(quantity2, controller.getSaleQuantityOfItemAtIndex(1),
                 "Item quantity should match the added quantity");
 
-        assertEquals(itemID1, controller.getItemsInCurrentSale().get(0).getID(),
+        assertEquals(itemID1, controller.getSaleIdOfItemAtIndex(0),
                 "Item ID should match the added item ID");
-        assertEquals(itemID2, controller.getItemsInCurrentSale().get(1).getID(),
+        assertEquals(itemID2, controller.getSaleIdOfItemAtIndex(1),
                 "Item ID should match the added item ID");
 
-        assertEquals(2, controller.getItemsInCurrentSale().size(),
+        assertEquals(2, controller.getSaleTotalItemCount(),
                 "Sale should contain two items after adding them");
     }
 
@@ -98,7 +98,7 @@ public class TestController {
         controller.startSale();
         controller.addItem(invalidItemID, quantity);
 
-        assertTrue(controller.getItemsInCurrentSale().isEmpty(),
+        assertTrue(controller.getSaleTotalItemCount() == 0,
                 "No items should be added for an invalid item ID");
     }
 

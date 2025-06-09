@@ -47,13 +47,6 @@ public class Sale {
     }
 
     /**
-     * @return Unmodifiable list of items in the sale as a <code>List</code>.
-     */
-    public List<ItemInCart> getItems() {
-        return Collections.unmodifiableList(this.items);
-    }
-
-    /**
      * @return Total price of the sale as a <code>BigDecimal</code>.
      */
     public BigDecimal getTotalPriceOfSale() {
@@ -79,6 +72,36 @@ public class Sale {
      */
     public BigDecimal getChange() {
         return this.change;
+    }
+
+    /**
+     * @return Unmodifiable list of items in the sale as a <code>List</code>.
+     */
+    public List<ItemInCart> getItems() {
+        return Collections.unmodifiableList(this.items);
+    }
+
+    /**
+     * @return The quantity of an item at a given index <code>int</code>.
+     */
+
+    public int getQuantityOfItemAtIndex(int index) {
+        return this.items.get(index).getQuantity();
+    }
+
+    /**
+     * @return The Id of an item at a given index <code>int</code>.
+     */
+
+    public int getIdOfItemAtIndex(int index) {
+        return this.items.get(index).getID();
+    }
+
+    /**
+     * @return Total number of items in the sale as an <code>int</code>.
+     */
+    public int getTotalItemCount() {
+        return getItems().size();
     }
 
     /**
